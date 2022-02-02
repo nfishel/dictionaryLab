@@ -1,6 +1,6 @@
 # Python Dictionaries Lab 📖 🐍
 
-## Dictionaries
+## Step 1 - Dictionaries
 A dictionary (`dict`) is a way to store related data in Python using `key:value` pairs. One way to create a new dictionary is to use `{ }` with each set of `key:value` pairs seperated with a comma. Values can be any data type `str`, `int`, `list`, or even `dict`. We could store information about states and their capitals in a Python dictionary.
 
 ```python
@@ -21,5 +21,15 @@ print(car)
 ```
 {% endspoiler %}
 
-{% next %}
+{% next "Step 2" %}
+
+## Step 2 - Printing individual values
+To print out the value for a given key you can use bracket notation. This is similar to how we print out an item in a list, the difference is instead of using the index number, we need to use the key. For example if you we wanted to see the capital of Ohio, we would use.
+```python
+print(states['Ohio'])
+```
+The result would be: 
+```bash
+Columbus
+```
   
