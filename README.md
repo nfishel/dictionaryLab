@@ -12,7 +12,14 @@ states = {
 }
 ```
 ### Your Turn...
-Create a new python dictionary to store data about your favorite automobile 🚙. Add keys for the `make`, `modle`, `color`, `cost`. Find an automobile you like and add values for each key. The `cost` value shoule be an `int`. 
+Create a new python dictionary to store data about your favorite automobile 🚙. Add keys for the `make`, `modle`, `color`, `cost`. Find an automobile you like and add values for each key. The `cost` value shoule be an `int`. Print out your dictionary using the `print( )` command
+
+{% spoiler "Need help?" %}
+If you name your dictionary `car`, then you can print the entire dictionary using
+```python
+print(car)
+```
+{% endspoiler %}
 
 {% next %}
   
