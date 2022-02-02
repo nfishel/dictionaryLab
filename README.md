@@ -45,3 +45,10 @@ print(f"One of my favorite cars is the {car['make']} {car['model']}!")
 {% endspoiler %}
 
 {% next "Step 3" %}
+
+## Step 3 - get() and update()
+When you try to access or print out a key that is NOT in the dictionary, Python throws a `KeyError` and crashes. To keep this from happening we can use the `.get()` method. For example, if we try to print out the capital of Illinois using `print(state['Illinois'])` we would get a `KeyError` and our program woud crash. but if we try to print it out with `.get()`...
+```python
+print(state.get('Illinois'))
+```
+Nothing happens, actually `.get()` returns `None` if the key doesn't exist. 
