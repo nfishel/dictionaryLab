@@ -51,4 +51,24 @@ When you try to access or print out a key that is NOT in the dictionary, Python 
 ```python
 print(state.get('Illinois'))
 ```
-Nothing happens, actually `.get()` returns `None` if the key doesn't exist. 
+Nothing happens, actually `.get()` returns `None` if the key doesn't exist. The nice thing about the `.get()` method is that you can provide a default response if the key is not in the dictionary. You simply put a comma and supply the default response as the 2nd argument. For example
+```python
+print(state.get('Indiana', 'State not found'))
+# Indianapolis --> because the key of Indiana is in our dictionary
+
+print(state.get('Illinois', 'State not found'))
+# State not found --> because the key of Illinois is NOT in our dictionary
+```
+### Your Turn...
+Print out the `make` and `model` of your automobile using a single print statement. There are a few different ways you can do this. (You can use an f-string just be careful with ' and ")
+
+{% spoiler "Need help?" %}
+If you name your dictionary `car`, then you can print the entire dictionary using
+```python
+print(f"One of my favorite cars is the {car['make']} {car['model']}!")
+# --> One of my favorite cars is the Ford Mustang!
+```
+
+{% endspoiler %}
+
+{% next "Step 3" %}
