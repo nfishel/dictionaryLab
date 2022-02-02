@@ -1,7 +1,7 @@
 # Python Dictionaries Lab 📖 🐍
 
 ## Step 1 - Dictionaries
-A dictionary (`dict`) is a way to store related data in Python using `key:value` pairs. One way to create a new dictionary is to use `{ }` with each set of `key:value` pairs seperated with a comma. Values can be any data type `str`, `int`, `list`, or even `dict`. We could store information about states and their capitals in a Python dictionary.
+A dictionary (`dict`) is a way to store related data in Python using `key:value` pairs. One way to create a new dictionary is to use `{ }` with each set of `key:value` pairs seperated with a comma. Values can be any data type `str`, `int`, `list`, or even `dict`. We could store information about states and their capitals in a Python dictionary. 🗺️
 
 ```python
 states = {
@@ -75,7 +75,7 @@ Don't forget to run your program to test our the results
 ## Step 4 - Let's update our dictionary
 Ok so we don't have an particular key in our dictionary, let's add it.  There are a couple of different ways we can do that.
 Suppose we want to add Illinois capital to our state dictionary.  (Illinois capital is Springfield)
-1. We could: `state['Illinois'] = 'Springfield'
+1. We could add the key:value pair using --> `state['Illinois'] = 'Springfield'`
 2. Or, we could use the `.update()` method. `.update()` takes a dictonary as an argument, so to add Springfield as the capital of Illinois --> `state.update{'Illinois': 'Springfield'})` would do the trick.
 
 The benefit of using `.update()` is that you can add multiple key:value pairs at one time as opposed to doing each one individually.
