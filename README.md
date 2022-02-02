@@ -1,7 +1,7 @@
 # Python Dictionaries Lab 📖 🐍
 
 ## Step 1 - Dictionaries
-A dictionary (`dict`) is a way to store related data in Python using `key:value` pairs. One way to create a new dictionary is to use `{ }` with each set of `key:value` pairs seperated with a comma. Values can be any data type `str`, `int`, `list`, or even `dict`. We could store information about states and their capitals in a Python dictionary. 🗺️
+A dictionary (`dict`) is a way to store related data in Python using `key:value` pairs. One way to create a new dictionary is to use `{ }` with each set of `key:value` pairs seperated with a comma. Values can be any data type `str`, `int`, `list`, or even `dict`. We could store information about states and their capitals in a Python dictionary.
 
 ```python
 states = {
@@ -78,19 +78,27 @@ Suppose we want to add Illinois capital to our state dictionary.  (Illinois capi
 1. We could add the key:value pair using --> `state['Illinois'] = 'Springfield'`
 2. Or, we could use the `.update()` method. `.update()` takes a dictonary as an argument, so to add Springfield as the capital of Illinois --> `state.update{'Illinois': 'Springfield'})` would do the trick.
 
-The benefit of using `.update()` is that you can add multiple key:value pairs at one time as opposed to doing each one individually.
+The benefit of using `.update()` is that you can add multiple key:value pairs at one time as opposed to doing each one individually! 🤯
 ```python
 state.update({'Illinois': 'Springfiled', 'Texas': 'Austin', 'Alabama': 'Montgomery', 'Rhode Island': 'Providence'})
 ```
 If a key already exists in the dictionary, the `.update()` method will overwrite the previous value for that key
 
 ### Your Turn...
-Try printing out the car's `year` using the `.get()` method. If the year isn't one of the keys, print the message "Nop, no year found"
-{% spoiler "Need help?" %}
-If you name your dictionary `car`, then you can print the entire dictionary using `python car.py`
+Let's add some information to our automobile.  Use the `.update()` method to add the `year` and `milage` to your dictionary, and update the `color` of your auto as well. 🚘 Print out the dictionary to make sure your changes have been included.
+
+{% spoiler "Hint" %}
+You could put the new information in a dictionary, then `.update()` your dictionary with the new info. 
 ```python
-print(f"One of my favorite cars is the {car['make']} {car['model']}!")
-# --> One of my favorite cars is the Ford Mustang!
+new_info = {
+  'Illinois': '',
+  'Texas': 'Au',
+  'Alabama': 'Montgomery',
+  'Rhode Island': 'Providence'
+}
+
+state.update(new_info)
+print(state)
 ```
 Don't forget to run your program to test our the results
 {% endspoiler %}
