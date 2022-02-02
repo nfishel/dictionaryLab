@@ -60,15 +60,39 @@ print(state.get('Illinois', 'State not found'))
 # State not found --> because the key of Illinois is NOT in our dictionary
 ```
 ### Your Turn...
-Print out the `make` and `model` of your automobile using a single print statement. There are a few different ways you can do this. (You can use an f-string just be careful with ' and ")
-
+Try printing out the car's `year` using the `.get()` method. If the year isn't one of the keys, print the message "Nop, no year found"
 {% spoiler "Need help?" %}
-If you name your dictionary `car`, then you can print the entire dictionary using
+If you name your dictionary `car`, then you can print the entire dictionary using `python car.py`
 ```python
 print(f"One of my favorite cars is the {car['make']} {car['model']}!")
 # --> One of my favorite cars is the Ford Mustang!
 ```
-
+Don't forget to run your program to test our the results
 {% endspoiler %}
 
-{% next "Step 3" %}
+{% next "Step 4" %}
+
+## Step 4 - Let's update our dictionary
+Ok so we don't have an particular key in our dictionary, let's add it.  There are a couple of different ways we can do that.
+Suppose we want to add Illinois capital to our state dictionary.  (Illinois capital is Springfield)
+1. We could: `state['Illinois'] = 'Springfield'
+2. Or, we could use the `.update()` method. `.update()` takes a dictonary as an argument, so to add Springfield as the capital of Illinois --> `state.update{'Illinois': 'Springfield'})` would do the trick.
+
+The benefit of using `.update()` is that you can add multiple key:value pairs at one time as opposed to doing each one individually.
+```python
+state.update({'Illinois': 'Springfiled', 'Texas': 'Austin', 'Alabama': 'Montgomery', 'Rhode Island': 'Providence'})
+```
+If a key already exists in the dictionary, the `.update()` method will overwrite the previous value for that key
+
+### Your Turn...
+Try printing out the car's `year` using the `.get()` method. If the year isn't one of the keys, print the message "Nop, no year found"
+{% spoiler "Need help?" %}
+If you name your dictionary `car`, then you can print the entire dictionary using `python car.py`
+```python
+print(f"One of my favorite cars is the {car['make']} {car['model']}!")
+# --> One of my favorite cars is the Ford Mustang!
+```
+Don't forget to run your program to test our the results
+{% endspoiler %}
+
+{% next "Step 5" %}
