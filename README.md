@@ -91,8 +91,8 @@ Let's add some information to our automobile.  Use the `.update()` method to add
 You could put the new information in a dictionary, then `.update()` your dictionary with the new info. 
 ```python
 new_info = {
-  'Illinois': '',
-  'Texas': 'Au',
+  'Illinois': 'Springfield',
+  'Texas': 'Austin',
   'Alabama': 'Montgomery',
   'Rhode Island': 'Providence'
 }
