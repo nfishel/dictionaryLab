@@ -12,7 +12,7 @@ states = {
 }
 ```
 ### Your Turn...
-Create a new python dictionary to store data about your favorite automobile 🚙. Add keys for the `make`, `modle`, `color`, `cost`. Find an automobile you like and add values for each key. The `cost` value shoule be an `int`. Print out your dictionary using the `print( )` command
+Create a new python dictionary to store data about your favorite automobile 🚙. Add keys for the `make`, `model`, `color`, `cost`. Find an automobile you like and add values for each key. The `cost` value shoule be an `int`. Print out your dictionary using the `print( )` command
 
 {% spoiler "Need help?" %}
 If you name your dictionary `car`, then you can print the entire dictionary using
@@ -32,4 +32,16 @@ The result would be:
 ```bash
 Columbus
 ```
-  
+### Your Turn...
+Print out the `make` and `model` of your automobile using a single print statement. There are a few different ways you can do this. (You can use an f-string just be careful with ' and ")
+
+{% spoiler "Need help?" %}
+If you name your dictionary `car`, then you can print the entire dictionary using
+```python
+print(f"One of my favorite cars is the {car['make']} {car['model']}!")
+# --> One of my favorite cars is the Ford Mustang!
+```
+
+{% endspoiler %}
+
+{% next "Step 3" %}
