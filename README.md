@@ -143,7 +143,7 @@ color - black
 {% spoiler "Hint" %}
 Use the `.items()` method with the for loop.
 {% endspoiler %}
-Run that code one last time :) `python car.py`
+Run that code one last time 😄 `python car.py`
 
 {% next "Step 6" %}
 
