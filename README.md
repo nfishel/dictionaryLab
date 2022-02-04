@@ -104,3 +104,41 @@ Don't forget to run your program to test our the results
 {% endspoiler %}
 
 {% next "Step 5" %}
+
+## Step 5 - Looping through a dictionary
+There are several ways to loop through a dictionary, depending on what information you need.  You can loop through the `keys` of a dictionary using for loop.
+``python
+for state in states:
+  print(state)
+
+#output print out each state name
+```
+If you need to see the `values` of the dictionary, you can use the `.values()` method. 
+```python
+for capital in states.values():
+  print(capital)
+  
+#output will print out each capital (the value) of each state (the key)
+```
+If you need both the `key` and the `value`, then use the `.items()` method.
+```python
+for state, capital in states.items():
+  print(f'The capital of {state} is {capital}')
+
+#output will print statements like "The capital of Indiana is Indianapolis"
+```
+
+### Your Turn...
+Loop through your automobile dictionary and print out all of it's info. Each key value pair should print out like the example below:
+```
+make - Ford
+modle - Mustang
+color - black
+# etc..
+```
+{% spoiler "Hint" %}
+Use the `.items()` method with the for loop.
+{% endspoiler %}
+
+{% next "Step 6" %}
+
