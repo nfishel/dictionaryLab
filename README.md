@@ -49,18 +49,18 @@ print(f"One of my favorite cars is the {car['make']} {car['model']}!")
 ## Step 3 - get() and update()
 When you try to access or print out a key that is NOT in the dictionary, Python throws a `KeyError` and crashes. To keep this from happening we can use the `.get()` method. For example, if we try to print out the capital of Illinois using `print(state['Illinois'])` we would get a `KeyError` and our program woud crash. but if we try to print it out with `.get()`...
 ```python
-print(state.get('Illinois'))
+print(states.get('Illinois'))
 ```
 Nothing happens, actually `.get()` returns `None` if the key doesn't exist. The nice thing about the `.get()` method is that you can provide a default response if the key is not in the dictionary. You simply put a comma and supply the default response as the 2nd argument. For example
 ```python
-print(state.get('Indiana', 'State not found'))
+print(states.get('Indiana', 'State not found'))
 # Indianapolis --> because the key of Indiana is in our dictionary
 
-print(state.get('Illinois', 'State not found'))
+print(states.get('Illinois', 'State not found'))
 # State not found --> because the key of Illinois is NOT in our dictionary
 ```
 ### Your Turn...
-Try printing out the car's `year` using the `.get()` method. If the year isn't one of the keys, print the message "Nop, no year found"
+Try printing out the car's `year` using the `.get()` method. If the year isn't one of the keys, print the message "Nope, no year found"
 {% spoiler "Need help?" %}
 If you name your dictionary `car`, then you can print the entire dictionary using `python car.py`
 ```python
@@ -74,13 +74,13 @@ Don't forget to run your program to test our the results
 
 ## Step 4 - Let's update our dictionary
 Ok so we don't have an particular key in our dictionary, let's add it.  There are a couple of different ways we can do that.
-Suppose we want to add Illinois capital to our state dictionary.  (Illinois capital is Springfield)
-1. We could add the key:value pair using --> `state['Illinois'] = 'Springfield'`
-2. Or, we could use the `.update()` method. `.update()` takes a dictonary as an argument, so to add Springfield as the capital of Illinois --> `state.update{'Illinois': 'Springfield'})` would do the trick.
+Suppose we want to add Illinois capital to our states dictionary.  (Illinois capital is Springfield)
+1. We could add the key:value pair using --> `states['Illinois'] = 'Springfield'`
+2. Or, we could use the `.update()` method. `.update()` takes a dictonary as an argument, so to add Springfield as the capital of Illinois --> `states.update{'Illinois': 'Springfield'})` would do the trick.
 
 The benefit of using `.update()` is that you can add multiple key:value pairs at one time as opposed to doing each one individually! 🤯
 ```python
-state.update({'Illinois': 'Springfiled', 'Texas': 'Austin', 'Alabama': 'Montgomery', 'Rhode Island': 'Providence'})
+states.update({'Illinois': 'Springfiled', 'Texas': 'Austin', 'Alabama': 'Montgomery', 'Rhode Island': 'Providence'})
 ```
 If a key already exists in the dictionary, the `.update()` method will overwrite the previous value for that key
 
@@ -97,8 +97,8 @@ new_info = {
   'Rhode Island': 'Providence'
 }
 
-state.update(new_info)
-print(state)
+states.update(new_info)
+print(states)
 ```
 Don't forget to run your program to test our the results
 {% endspoiler %}
@@ -113,7 +113,7 @@ for state in states:
 
 #output print out each state name
 ```
-If you need to see the `values` of the dictionary, you can use the `.values()` method. 
+If you need the `values` of the dictionary, you can use the `.values()` method. 
 ```python
 for capital in states.values():
   print(capital)
