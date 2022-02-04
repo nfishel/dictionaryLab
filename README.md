@@ -107,7 +107,7 @@ Don't forget to run your program to test our the results
 
 ## Step 5 - Looping through a dictionary
 There are several ways to loop through a dictionary, depending on what information you need.  You can loop through the `keys` of a dictionary using for loop.
-``python
+```python
 for state in states:
   print(state)
 
