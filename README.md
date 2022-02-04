@@ -147,4 +147,5 @@ To finish out the lab, you will submit your code to Canvas.
 1. Click on the folder to open the File Selector
 2. Click on the ... next to the `car.py` file and choose Download
 3. Upload the `car.py` file to [Canvas](https://hse.instructure.com/courses/107214/assignments/1032192)
-![dowload](./download.png =250x)
+<img src='./download.png' width='300'>
+![dowload](./download.png)
