@@ -142,3 +142,9 @@ Use the `.items()` method with the for loop.
 
 {% next "Step 6" %}
 
+## Step 6 Turn in your code 🏁
+To finish out the lab, you will submit your code to Canvas. 
+1. Click on the folder to open the File Selector
+2. Click on the ... next to the `car.py` file and choose Download
+3. Upload the `car.py` file to [Canvas](https://hse.instructure.com/courses/107214/assignments/1032192)
+
