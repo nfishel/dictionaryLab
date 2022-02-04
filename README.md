@@ -21,6 +21,7 @@ print(car)
 ```
 {% endspoiler %}
 Run your program with `python car.py` to check your results
+
 {% next "Step 2" %}
 
 ## Step 2 - Printing individual values
@@ -44,6 +45,7 @@ print(f"One of my favorite cars is the {car['make']} {car['model']}!")
 
 {% endspoiler %}
 Don't forget to run your code to see the output `python car.py`
+
 {% next "Step 3" %}
 
 ## Step 3 - get() and update()
@@ -70,6 +72,7 @@ print(f"One of my favorite cars is the {car['make']} {car['model']}!")
 
 {% endspoiler %}
 Don't forget to run your program to test out the results
+
 {% next "Step 4" %}
 
 ## Step 4 - Let's update our dictionary
@@ -103,6 +106,7 @@ print(states)
 
 {% endspoiler %}
 Don't forget to run your program to test out the results
+
 {% next "Step 5" %}
 
 ## Step 5 - Looping through a dictionary
@@ -140,6 +144,7 @@ color - black
 Use the `.items()` method with the for loop.
 {% endspoiler %}
 Run that code one last time :) `python car.py`
+
 {% next "Step 6" %}
 
 ## Step 6 Turn in your code 🏁
